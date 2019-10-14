@@ -103,7 +103,7 @@ class App extends React.Component {
 					Get username of owner (protected)!
 				</button>
 				{this.state.owners.map(owner => {
-					return <p key={owner.fullName}>{owner.fullName}</p>;
+					return <p key={owner.fullName}>Welcome back {owner.fullName}</p>;
 				})}
 				<button onClick={this.fetchKittens}>Get me all kittens!</button>
 				{this.state.kittens.map(kitten => {
